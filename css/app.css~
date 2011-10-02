@@ -28,5 +28,5 @@
 
 #footer {
 	width: 780px;
-	height: 100px;
+	height: 200px;
 }
