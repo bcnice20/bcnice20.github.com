@@ -1,0 +1,28 @@
+#container {
+	width: 780px;
+	height: auto;
+	margin: auto;
+}
+
+#banner {
+	text-align: center;
+	width: 780px;
+	height: 100px;
+}
+
+#sidebar {
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+#content {
+	width: 580px;
+	height: 400px;
+	float: right;
+}
+
+#footer {
+	width: 780px;
+	height: 100px;
+}

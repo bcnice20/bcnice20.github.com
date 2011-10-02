@@ -5,13 +5,30 @@
 
 	<title>Github Page</title>
 
-	<script type="text/javascript" src='js/less-1.1.3.min.js'></script>
-	<link rel="stylesheet/less" href="css/app.less" type="text/css" />
+	<link rel="stylesheet" href="css/app.css" type="text/css" />
 	<script type="text/javascript" src='js/coffee-script.js'></script>
+	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 </head>
 <body>
-	<h1 id="heading">Welcome and Stuff..</h1>
+	<div id="container">
+		<div id="banner"><h1>Welcome and Stuff..</h1></div>
+		<div id="sidebar"></div>
+		<div id="content"></div>
+		<div id="footer"></div>
+	</div>
 
-	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+	<script type="text/coffeescript">
+		list = '''
+					 <ul>
+					   <li><a href='/'>Home</a></li>
+				     <li><a href='/roms'>Roms</a></li>
+				     <li><a href='/kernels'>Kernels</a></li>
+					 </ul>
+					 '''
+						
+		$('<p>Hello world</p>').appendTo('#content')
+		$(list).appendTo('#sidebar')
+		
+	</script>
 </body>
 </html>
